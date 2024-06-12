@@ -1,10 +1,17 @@
+#!/bin/bash
 # read -rp "Give me your email (if you leave empty will take it from Mac User):" email
 # export email
 
+echo "Welcome to Ark 🛳️"
+
+export HELPERS_DIR="${ARK_URL}/helpers"
+export COR_DEPS_DIR="${ARK_URL}/core_deps"
+export DEPS_DIR="${ARK_URL}/deps"
+
 {
-  bash ./helpers/helpers.sh
-  bash ./core_deps/core_dpes.sh
-  bash ./deps/deps.sh
+  bash "${HELPERS_DIR}/helpers.sh"
+  bash "${COR_DEPS_DIR}/core_dpes.sh"
+  bash "${DEPS_DIR}/dpes.sh"
 } | tee ark.log
 
 

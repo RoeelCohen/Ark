@@ -9,11 +9,3 @@ apps=(${ides[@]} ${dbs[@]} ${dev_apps[@]} ${utility_apps[@]})
 for app in "${apps[@]}"; do
   brew install --cask "$app"
 done
-
-# Install brew deps:
-# Other potential apps:
-# apps=(pnpm jq mas awscli kubectl kubernetes-cli node fnm)
-# apps=(zsh)
-# for app in "${apps[@]}"; do
-#   brew install "$app"
-# done

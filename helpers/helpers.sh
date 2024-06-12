@@ -1,4 +1,6 @@
-HELPERS_DIR=$(dirname "$0")
+#!/bin/bash
+
+echo "Adding helpers 🛟"
 
 {
     bash "${HELPERS_DIR}/_log.sh"

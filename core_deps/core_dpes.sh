@@ -1,6 +1,5 @@
-echo "Installing core dependencies... 🧱"
-
-COR_DEPS_DIR=$(dirname "$0")
+#!/bin/bash
+echo "Installing core dependencies 🧱"
 
 {
     bash "${COR_DEPS_DIR}/_brew.sh"

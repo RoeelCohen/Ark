@@ -1,6 +1,5 @@
-echo "Installing dependencies... 🧱"
-
-DEPS_DIR=$(dirname "$0")
+#!/bin/bash
+echo "Installing dependencies 🧱"
 
 {
     bash "${DEPS_DIR}/_apps.sh"
