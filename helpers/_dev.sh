@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "dev helper functions..."
 # Function to check if we are in dev mode
 is_dev_mode() {
   [[ "$DEV_MODE" == "true" ]]

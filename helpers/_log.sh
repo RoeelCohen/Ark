@@ -4,6 +4,8 @@
 # log_ok "Process finished"
 # log_error "Something wen wrong"
 
+echo "logs helper functions..."
+
 echo downloading log helpers 
 
 print_in_color() {
