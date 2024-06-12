@@ -12,3 +12,6 @@ dev_print_and_exit() {
     exit 0  # Exit the subshell
   fi
 }
+
+export -f is_dev_mode
+export -f dev_print_and_exit
