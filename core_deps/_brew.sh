@@ -1,3 +1,4 @@
+dev_print_and_exit "test exiting from brew install...."
 # install brew if not exists:
 which -s brew
 if [[ $? != 0 ]] ; then
