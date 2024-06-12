@@ -3,6 +3,6 @@
 echo "Adding helpers 🛟"
 
 {
-    bash "${HELPERS_DIR}/_log.sh"
-    bash "${HELPERS_DIR}/_dev.sh"
+    curl -sL "${HELPERS_DIR}/_log.sh" | bash
+    curl -sL "${HELPERS_DIR}/_dev.sh" | bash
 }

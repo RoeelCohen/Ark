@@ -2,6 +2,6 @@
 echo "Installing dependencies 🧱"
 
 {
-    bash "${DEPS_DIR}/_apps.sh"
-    bash "${DEPS_DIR}/_cli.sh"
+    curl -sL "${DEPS_DIR}/_apps.sh" | bash
+    curl -sL "${DEPS_DIR}/_cli.sh" | bash
 }

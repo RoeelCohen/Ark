@@ -9,9 +9,9 @@ export COR_DEPS_DIR="${ARK_URL}/core_deps"
 export DEPS_DIR="${ARK_URL}/deps"
 
 {
-  bash "${HELPERS_DIR}/helpers.sh"
-  bash "${COR_DEPS_DIR}/core_dpes.sh"
-  bash "${DEPS_DIR}/dpes.sh"
+  curl -sL "${HELPERS_DIR}/helpers.sh" | bash
+  curl -sL "${COR_DEPS_DIR}/core_dpes.sh" | bash
+  curl -sL "${DEPS_DIR}/dpes.sh" | bash
 } | tee ark.log
 
 
