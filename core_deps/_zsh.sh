@@ -1,5 +1,4 @@
 echo "Installing zsh 🌈"
-echo "Setting zsh 🌈"
 rm -rf ~/.zsh* ~/.oh-my-zsh
 echo '💾 Setting up command line tools right now.. 💾'
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
