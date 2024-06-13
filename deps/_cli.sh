@@ -10,3 +10,6 @@ done
 for ttool in "${terminal_tools[@]}"; do
   brew install "$ttool"
 done
+
+# Set fzf keybindings (if it's not installed it jsut won't do anything)
+source <(fzf --zsh)
