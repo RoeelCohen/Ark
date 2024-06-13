@@ -11,7 +11,7 @@ export DEPS_DIR="${ARK_URL}/deps"
 {
   curl -sL "${HELPERS_DIR}/helpers.sh" | bash
   curl -sL "${COR_DEPS_DIR}/core_dpes.sh" | bash
-  curl -sL "${DEPS_DIR}/dpes.sh" | bash
+  curl -sL "${DEPS_DIR}/deps.sh" | bash
 } | tee ark.log
 
 
