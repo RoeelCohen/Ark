@@ -2,7 +2,7 @@
 echo "installing brew 🍺"
 
 yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "eval $(/opt/homebrew/bin/brew shellenv)" >>/Users/"$USER"/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/"$USER"/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 echo "finish installing brew.."
